@@ -1,0 +1,53 @@
+.background{
+    background-color: #524c4c;
+}
+
+.main-prefooter{
+    margin-top: 1%;
+    width: 80%;
+    height: auto;
+}
+
+.divs{
+    display: inline-block;
+    height: auto;
+    width: 235px;
+    text-align: center;
+}
+
+.title-pre-footer{
+    padding-top: 15%;
+    padding-bottom: 10%;
+    color: #fffbf8;
+    font-weight: 400;
+    font-size: 23px;
+    height: auto;
+}
+
+.description{
+    height: auto;
+    padding-bottom: 15%;
+    color: 	#868584;
+}
+
+@media screen and (max-width:1140px){
+    .main-prefooter{
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width:1170px){
+
+    .main-prefooter{
+        margin-top: 1%;
+        width: 50%;
+        height: auto;
+    }
+    .divs{
+        display: inline-block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+

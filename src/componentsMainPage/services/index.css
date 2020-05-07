@@ -1,0 +1,50 @@
+/*==============Serviços disponíveis no site==============*/
+
+.bgc{
+    background-color: #eeeeee;
+}
+
+.serviços-container {
+    width: 100%;
+    display: table;
+    height:100%;
+
+}
+
+.serviço {
+    height: auto;
+    width: auto;
+    background-color: white;
+    border: solid 1px black;
+    border-radius: 7px;
+    padding: 2%;
+}
+
+.serviço img {
+    border-radius: 7px 7px 3px 3px;
+    width: 100%;
+    height: 100%;
+}
+
+.serviço legend {
+    font-size: 20pt;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 300px){
+
+    .serviço{
+        float: left;
+        margin: 3%;
+    }
+}
+
+@media screen and (min-width: 1000px){
+
+    .serviço{
+        max-width: 300px;
+        float: left;
+        margin: 1% 1.3% ;
+    }
+}
+
