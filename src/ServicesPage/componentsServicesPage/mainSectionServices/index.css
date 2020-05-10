@@ -1,0 +1,21 @@
+.Title{
+    line-height: 60pt;
+    font-size: 25pt;
+    margin-top: 1%;
+    margin-left: 2%;
+}
+
+.container-service-desc{
+    padding: 2%;
+    border: black solid 1px;
+    border-radius: 5px;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    margin: 2%;
+}
+
+.img-service-page{
+    width: 50%;
+    height: auto;
+    border-radius: 5px;
+}

@@ -1,0 +1,24 @@
+.footer{
+    width: 100%;
+    min-width: 320px;
+    height: 110px;
+    background-color: #252323;
+}
+#socials_desktop{
+    float: right;
+}
+
+.footer p{
+    margin-top: 43px;
+    width: 50%;
+    float: left;
+    color: rgba(133, 133, 133, 0.9);
+}
+
+@media screen and (max-width: 1000px){
+    .footer p{
+        text-align: center;
+        width: 100%;
+    }
+}
+

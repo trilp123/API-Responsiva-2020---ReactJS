@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Slab', serif;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+#MainPage{
+    overflow-x: hidden;
+}
+
+.ajuste{
+    max-width: 980px;
+    min-width: 320px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.transparent{
+    background-color: transparent;
+    background: transparent;
+}
+
+.back{
+    background-color: #252323;
+}
