@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import Header from './componentsAboutUs/header';
-import NavDesktop from './componentsAboutUs/nav_desktop';
+import Header from '../globalComponents/header';
+import NavDesktop from '../globalComponents/nav_desktop';
 import MainSectionAboutUs from './componentsAboutUs/mainSectionAboutUs';
-import Footer from './componentsAboutUs/footer';
+import Footer from '../globalComponents/footer';
 
 class AboutUs extends Component{
     render(){

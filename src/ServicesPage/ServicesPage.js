@@ -1,18 +1,18 @@
 import React, { Component } from 'react';
 
-import Header from './componentsServicesPage/header';
-import NavDesktop from './componentsServicesPage/nav_desktop';
+import Header from '../globalComponents/header';
+import NavDesktop from '../globalComponents/nav_desktop';
 import MainSectionServices from './componentsServicesPage/mainSectionServices';
-import Footer from './componentsServicesPage/footer';
+import Footer from '../globalComponents/footer';
 
 class ServicesPage extends Component{
     render(){
         return(
             <div id="ServicesPage">
-                <Header />
-                <NavDesktop />
+                <Header/>
+                <NavDesktop/>
                 <MainSectionServices/>
-                <Footer />
+                <Footer/>
             </div>
         )
     }

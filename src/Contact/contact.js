@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
 import './contact.css';
 
-import Header from './componentsContact/header';
-import NavDesktop from './componentsContact/nav_desktop';
+import Header from '../globalComponents/header';
+import NavDesktop from '../globalComponents/nav_desktop';
 import MainSectionContact from './componentsContact/mainSectionContact';
-import Footer from './componentsContact/footer';
+import Footer from '../globalComponents/footer';
 
 class ContactPage extends Component{
     render(){

@@ -1,0 +1,40 @@
+form{
+    margin: 3%;
+    color:rgb(214, 213, 213);
+    width: 30%;
+    height: auto;
+    border: solid 2px rgb(214, 213, 213);
+    background-color: #252323;
+    text-align: center;
+}
+
+#title_login{
+    text-align: center;
+    margin: 5%;
+}
+
+.input-container{
+    width: 100%;
+    height: auto;
+    padding: 1%;
+    margin-bottom: 3%;
+}
+
+.input-form{
+    color: rgb(214, 213, 213);
+    margin-left: 1%;
+    padding: 2%;
+    border-color: rgb(214, 213, 213);
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 0.5s;
+}
+
+.input-form:hover{
+    border-color: rgb(255, 53, 53);
+}
+
+.button{
+    height: 25px;
+    width: 25%;
+}
