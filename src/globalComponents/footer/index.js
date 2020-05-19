@@ -1,5 +1,4 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
 import './index.css';
 
 const Footer = () => (
@@ -8,7 +7,7 @@ const Footer = () => (
 
         <footer className="footer ajuste">
 
-           <p>© 2013 Web world. All rights reserved. Theme by EverSistemas</p>
+           <p>© 2013 Web world. Todos os direitos reservados. Tema por EverSistemas</p>
 
            <ul id="socials_desktop">
             
@@ -18,11 +17,11 @@ const Footer = () => (
                     </li>
                 </a>
 
-                <Link to="/contato">
+                <a href="https://api.whatsapp.com/send?phone=5519997677735&text=Queria uma informação sobre o sistema" target="_blank" rel="noopener noreferrer">
                     <li>
-                        <i className="fas fa-phone-square-alt fa-2x"></i>
+                        <i className="fab fa-whatsapp-square fa-2x"></i>
                     </li>
-                </Link>
+                </a>
 
                 <a href="https://www.instagram.com/ever.sistemas/?hl=pt-br">
                     <li>

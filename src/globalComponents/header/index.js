@@ -6,13 +6,20 @@ import './index.css';
 import Logo from '../../assets/Logo.png';
 
 function ShowMobileMenu(){
-    $("header").hide(1500);
-    $("nav").show(1500);
+    $('header , footer , .container-nav-desktop, section , .serviços-container, #slider-container').not('nav').fadeOut();
+    $("#nav_mobile, #main-section-mobile, #footer_mobile").fadeIn(1000);
 }
 
 function HideMobileMenu(){
-    $("nav").hide(1500);
-    $("header").show(1500);
+    $("nav").fadeOut(0);
+    $('header , footer , section , .serviços-container, #slider-container').fadeIn(1000);
+}
+
+function changepage(){
+    $(window).on('click', function () {
+        $('#preloader .inner').fadeOut();
+        $('#preloader').delay(350).fadeOut('slow'); 
+    });
 }
 
 const Header = () => (
@@ -21,7 +28,7 @@ const Header = () => (
 
         <header className="main-header ajuste ">
 
-            <Link to="/">
+            <Link to="/" onClick={changepage}>
                 <img src={Logo} alt="Logo EverSitemas"/>
             </Link>
 
@@ -37,11 +44,11 @@ const Header = () => (
                     </li>
                 </a>
 
-                <Link to="/contato">
+                <a href="https://api.whatsapp.com/send?phone=5519997677735&text=Queria uma informação sobre o sistema" target="_blank" rel="noopener noreferrer">
                     <li>
-                        <i className="fas fa-phone-square-alt fa-2x"></i>
+                        <i className="fab fa-whatsapp-square fa-2x"></i>
                     </li>
-                </Link>
+                </a>
 
                 <a href="https://www.instagram.com/ever.sistemas/?hl=pt-br">
                     <li>
@@ -61,7 +68,7 @@ const Header = () => (
 
         <nav id="nav_mobile">
 
-            <img src={Logo} alt="Logo EverSitemas"></img>
+            <img src={Logo} alt="Logo EverSitemas" onClick={changepage}></img>
 
             <button className="btn-close transparent" onClick={HideMobileMenu}>
                 <i className="fas fa-times-circle fa-lg transparent"></i>
@@ -71,37 +78,37 @@ const Header = () => (
 
                 <ol id="lista_mobile">
 
-                    <Link to="/">
+                    <Link to="/" onClick={changepage}>
                         <li>
                             Home <i className="fas fa-home transparent"></i>
                         </li>
                     </Link>
 
-                    <Link to="/sobre">
+                    <Link to="/sobre" onClick={changepage}>
                         <li>
                             Sobre nós <i className="fas fa-info transparent"></i>
                         </li>
                     </Link>
 
-                    <Link to="/serviços">
+                    <Link to="/serviços" onClick={changepage}>
                         <li>
                             Serviços <i className="fas fa-laptop-house transparent"></i>
                         </li>
                     </Link>
 
-                    <Link to="/clientes">
+                    <Link to="/clientes" onClick={changepage}>
                         <li>
                             Clientes <i className="fas fa-users transparent"></i>
                         </li>
                     </Link>
 
-                    <Link to="/contato">
+                    <Link to="/contato" onClick={changepage}>
                         <li>
                             Contate-nos <i className="fas fa-phone transparent"></i>
                         </li>
                     </Link>
 
-                    <Link to="/user_login">
+                    <Link to="/user_login" onClick={changepage}>
                         <li>
                             Login <i className="fas fa-sign-in-alt"></i>
                         </li>
@@ -112,8 +119,8 @@ const Header = () => (
                 <ol id="lista_socialmedias_mobile"> 
 
                     <li>
-                       <Link to="/contato">
-                            <i className="fas fa-phone-square-alt fa-2x"></i>
+                       <Link to="/contato" onClick={changepage}>
+                            <i className="fab fa-whatsapp-square fa-2x"></i>
                        </Link>
                     </li>
 

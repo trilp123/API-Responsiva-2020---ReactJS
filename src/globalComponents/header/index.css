@@ -53,7 +53,7 @@
         height: 100%;
         background-color: #252323;
         position: fixed;
-        z-index: 1;
+
     }
 
     #nav_mobile img{
@@ -70,7 +70,6 @@
     }
 
     .btn-menu {
-        overflow-wrap: unset;
         display: initial;
         width: 56px;
         height: 56px;
@@ -83,6 +82,7 @@
         margin-right: 20px;
         background-color: #252323;
         transition: filter 0.2s;
+        
     }
     
     .btn-menu:hover {
@@ -96,6 +96,7 @@
         cursor: pointer;
         transition: color 0.5s;
         border: none;
+        color: rgba(83, 83, 83, 0.582);
     }
     
     .btn-close:hover {
@@ -109,7 +110,7 @@
     }
 
     #lista_mobile{
-        padding-top: 8%;
+        padding-top:5%;
         list-style: none;
         width: 100%;
         margin-right: auto;
@@ -119,6 +120,7 @@
     }
 
     #lista_mobile li{
+        color: rgba(255, 255, 255, 0.644);
         width: 100%;
         margin-right: auto;
         margin-left: auto;
@@ -129,7 +131,7 @@
     }
 
     #lista_mobile li:hover{
-        background-color: rgb(150, 150, 150);
+        background-color: rgb(49, 49, 49);
         cursor: pointer;
         border-radius: 5px;
     }
@@ -141,19 +143,21 @@
     }
 
     #lista_socialmedias_mobile li{
- 
         float: right;
         display: inline-block;
-        margin-left: 1.5%;
+        margin-left: 1.5%; 
+    }
+
+    #lista_socialmedias_mobile li i{
+        color: rgba(197, 197, 197, 0.644);
         transition: all 0.5s;
     }
 
-    #lista_socialmedias_mobile li:hover{
-        background-color: rgb(150, 150, 150);;
+    #lista_socialmedias_mobile li i:hover{
+        color:  rgb(117, 117, 117);
         border-radius: 5px;
         cursor: pointer;
     }
-
 
     #footer_mobile{
         width: 100%;
@@ -163,13 +167,7 @@
     
     .footer_title_mobile{
         text-align: center;
+        color: rgba(128, 128, 128, 0.644);
     }
 
-    @media screen and (min-height:575px){
-        #lista_mobile{
-            padding-bottom: 37%;
-        }
-    }
-    
-    
 }

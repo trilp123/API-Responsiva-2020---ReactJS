@@ -1,36 +1,45 @@
 import React from 'react';
+import $ from 'jquery';
 import {Link} from 'react-router-dom';
 import './index.css'
 
+function changepage(){
+    $(window).on('click', function () {
+        $('#preloader .inner').fadeOut();
+        $('#preloader').delay(350).fadeOut('slow'); 
+    });
+}
+
 const NavDesktop = () => (
 
-    <div className="border-bottom bgc">
+    <div>
+
        <nav className="container-nav-desktop ajuste">
            
             <ul id="lista-nav-desktop">
             
                 <li>
-                    <Link to="/">Home</Link>
+                    <Link to="/" onClick={changepage}>Home</Link>
                 </li>
 
                 <li>
-                    <Link to="/sobre">Sobre nós</Link>
+                    <Link to="/sobre" onClick={changepage}>Sobre nós</Link>
                 </li>
 
                 <li>
-                    <Link to="/serviços">Serviços</Link>
+                    <Link to="/serviços" onClick={changepage}>Serviços</Link>
                 </li>
 
                 <li>
-                    <Link to="/clientes">Clientes</Link>
+                    <Link to="/clientes" onClick={changepage}>Clientes</Link>
                 </li>
 
                 <li>
-                    <Link to="/contato">Contate-nos</Link>
+                    <Link to="/contato" onClick={changepage}>Contate-nos</Link>
                 </li>
 
                 <li>
-                    <Link to="/user_login">Login</Link>
+                    <Link to="/user_login" onClick={changepage}>Login</Link>
                 </li>
 
                 <li>

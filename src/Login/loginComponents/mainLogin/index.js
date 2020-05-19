@@ -20,9 +20,6 @@ const MainLogin = () => (
        
             <button className="button">Entrar</button>
        
-
-          
-
         </form>
     </div>
 );

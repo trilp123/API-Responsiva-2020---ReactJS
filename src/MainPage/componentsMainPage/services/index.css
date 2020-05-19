@@ -8,27 +8,44 @@
     width: 100%;
     display: table;
     height:100%;
-
 }
 
 .serviço {
-    height: auto;
+    min-height: 260px;
+    max-height: 360px;
     width: auto;
     background-color: white;
-    border: solid 1px black;
+    border: solid 1px rgb(128, 128, 128);
     border-radius: 7px;
     padding: 2%;
+    text-align: center;
 }
 
-.serviço img {
-    border-radius: 7px 7px 3px 3px;
-    width: 100%;
-    height: 100%;
+.serviço:nth-child(4){
+    margin-bottom: 3%;
+}
+
+.serviço:nth-child(5){
+    margin-bottom: 3%;
+}
+
+.serviço:nth-child(6){
+    margin-bottom: 3%;
+}
+
+.serviço i{
+    font-size: 75px;
 }
 
 .serviço legend {
-    font-size: 20pt;
+    font-size: 19pt;
     font-weight: bold;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.serviço h4{
+    margin-bottom: 2%;
 }
 
 @media screen and (min-width: 300px){
@@ -36,6 +53,10 @@
     .serviço{
         float: left;
         margin: 3%;
+    }
+
+    .Title{
+        font-size: 20pt;
     }
 }
 
