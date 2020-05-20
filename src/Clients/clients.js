@@ -7,6 +7,7 @@ import Header from '../globalComponents/header';
 import NavDesktop from '../globalComponents/nav_desktop';
 import MainSectionClients from './componentsClients/mainSectionClients';
 import Footer from '../globalComponents/footer';
+import WhatsApp from '../globalComponents/wppContact';
 
 class Clients extends Component{
     render(){
@@ -26,6 +27,7 @@ class Clients extends Component{
                     <NavDesktop/>
                     <MainSectionClients/>
                     <Footer/>
+                    <WhatsApp/>
                 </div>
 
                 <div id="preloader">

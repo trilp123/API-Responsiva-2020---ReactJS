@@ -7,6 +7,7 @@
     background-color:#252323; /* cor do background que vai ocupar o body */
     z-index:999; /* z-index para jogar para frente e sobrepor tudo */
 }
+
 #preloader .inner {
     position: absolute;
     top: 50%; /* centralizar a parte interna do preload (onde fica a animação)*/

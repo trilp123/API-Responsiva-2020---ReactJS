@@ -7,6 +7,7 @@ import Header from '../globalComponents/header';
 import NavDesktop from '../globalComponents/nav_desktop';
 import MainLogin from './loginComponents/mainLogin';
 import Footer from '../globalComponents/footer';
+import WhatsApp from '../globalComponents/wppContact';
 
 class LoginPage extends Component{
     render(){
@@ -22,22 +23,23 @@ class LoginPage extends Component{
 
           <div>
 
-            <div>
-              <Header/>
-              <NavDesktop/>
-              <MainLogin/>
-              <Footer/>
-            </div>
+              <div>
+                <Header/>
+                <NavDesktop/>
+                <MainLogin/>
+                <Footer/>
+                <WhatsApp/>
+              </div>
 
-            <div id="preloader">
-                    <div className="inner">
-                        <div className="bolas">
-                            <div></div>
-                            <div></div>
-                            <div></div>                    
-                        </div>
+              <div id="preloader">
+                <div className="inner">
+                    <div className="bolas">
+                      <div></div>
+                      <div></div>
+                      <div></div>                    
                     </div>
                 </div>
+              </div>
           </div>
         )
     }

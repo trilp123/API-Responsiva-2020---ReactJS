@@ -7,6 +7,7 @@ import Header from '../globalComponents/header';
 import NavDesktop from '../globalComponents/nav_desktop';
 import MainSectionContact from './componentsContact/mainSectionContact';
 import Footer from '../globalComponents/footer';
+import WhatsApp from '../globalComponents/wppContact';
 
 class ContactPage extends Component{
     render(){
@@ -26,6 +27,7 @@ class ContactPage extends Component{
                     <NavDesktop/>
                     <MainSectionContact/>
                     <Footer/>
+                    <WhatsApp/>
                 </div>
 
                 <div id="preloader">

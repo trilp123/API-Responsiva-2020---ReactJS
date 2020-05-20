@@ -10,7 +10,7 @@ const PreFooter = () => (
 
                 <p className="description">
                     Nosso sistema é desenvolvido em Delphi 7, com cargos de administradores,
-                    banco de dados FireBird, e integrado com o sistema de Emissões do governo.
+                    banco de dados FireBird, e integrado com o sistema de Emissões de notas do governo.
                 </p>
             </div>
 
@@ -24,7 +24,6 @@ const PreFooter = () => (
                     • Cliente 8 • Cliente 9 <br/>
                     • Cliente 10 • Cliente 11 <br/>
                     • Cliente 12 • Cliente 13
-
                 </p>
             </div>
 
@@ -34,9 +33,6 @@ const PreFooter = () => (
                 <p className="description">
                     email@outlook.com<br/>
                     email@outlook.com<br/>
-                    email@outlook.com<br/>
-                    (19) 991482482<br/>
-                    (19) 991482482<br/>
                     (19) 991482482
                 </p>
             </div>
@@ -46,10 +42,6 @@ const PreFooter = () => (
 
                 <p className="description">
                     Porto Ferreira, São Paulo<br/>
-                    Porto Ferreira, São Paulo<br/>
-                    Porto Ferreira, São Paulo<br/>
-                    Araras, São Paulo<br/>
-                    Araras, São Paulo<br/>
                     Araras, São Paulo
                 </p>
             </div>

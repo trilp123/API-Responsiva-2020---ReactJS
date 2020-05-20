@@ -12,9 +12,9 @@ function changepage(){
 
 const NavDesktop = () => (
 
-    <div>
+    <div className="container-nav-desktop">
 
-       <nav className="container-nav-desktop ajuste">
+       <nav className="ajuste">
            
             <ul id="lista-nav-desktop">
             

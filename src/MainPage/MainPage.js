@@ -21,7 +21,7 @@ class MainPage extends Component{
       $('#preloader').delay(350).fadeOut('slow'); 
     });
 
-    document.getElementsByTagName("title")[0].innerText = 'EverSistemas | Inicio';
+    document.getElementsByTagName("title")[0].innerText = 'EverSistemas | Início';
 
     return(
   

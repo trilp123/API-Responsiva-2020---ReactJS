@@ -17,14 +17,14 @@
     height: auto;
     list-style: none;
     float: right;
-    margin-right: 0.5%;
+    margin-right: 1%;
 }
 
 #socials_desktop li{
     display: inline-block;
     margin-top: 38px;
     float: right;
-    margin-right: 8%;
+    margin-right: 7%;
     color: rgba(133, 133, 133, 0.9);
     cursor: pointer;
     transition: color 0.5s;
@@ -32,6 +32,15 @@
 
 #socials_desktop li:hover{
     color: rgba(173, 173, 173, 0.9);
+}
+#socials_desktop li p{
+    float: right;
+    padding-top: 3%;
+    padding-left: 1%;
+}
+
+#socials_desktop li:last-child{
+    float: right;
 }
 
 /*NAV MOBILE*/
@@ -44,30 +53,7 @@
     display: none;
 }
 
-/*Small devices*/
-
-@media screen and (max-width:1000px){
-
-    #nav_mobile{
-        width: 100%;
-        height: 100%;
-        background-color: #252323;
-        position: fixed;
-
-    }
-
-    #nav_mobile img{
-        margin-top: 2%;
-        margin-right: 5%;
-        margin-left: 2%;
-        width: 180px;
-        height: auto;
-        margin-bottom: 8px;
-    }
-    
-    #socials_desktop {
-        display: none;
-    }
+@media screen and (max-width: 1000px){
 
     .btn-menu {
         display: initial;
@@ -82,9 +68,34 @@
         margin-right: 20px;
         background-color: #252323;
         transition: filter 0.2s;
-        
+    }
+    #socials_desktop {
+        display: none;
+    }
+}
+
+/*Small devices*/
+
+@media screen and (min-width:100px){
+
+    #nav_mobile{
+        width: 100%;
+        height: 100%;
+        background-color: #252323;
+        position: fixed;
+    }
+
+    #nav_mobile img{
+        margin-top: 2%;
+        margin-right: 5%;
+        margin-left: 2%;
+        width: 180px;
+        height: auto;
+        margin-bottom: 8px;
     }
     
+
+
     .btn-menu:hover {
         filter: brightness(200%);
     }
@@ -169,5 +180,4 @@
         text-align: center;
         color: rgba(128, 128, 128, 0.644);
     }
-
 }

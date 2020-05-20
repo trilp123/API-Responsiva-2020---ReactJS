@@ -6,12 +6,12 @@ import './index.css';
 import Logo from '../../assets/Logo.png';
 
 function ShowMobileMenu(){
-    $('header , footer , .container-nav-desktop, section , .serviços-container, #slider-container').not('nav').fadeOut();
+    $('header , footer , .container-nav-desktop, section , .serviços-container, #slider-container').not('#nav_mobile').fadeOut();
     $("#nav_mobile, #main-section-mobile, #footer_mobile").fadeIn(1000);
 }
 
 function HideMobileMenu(){
-    $("nav").fadeOut(0);
+    $("#nav_mobile").fadeOut(0);
     $('header , footer , section , .serviços-container, #slider-container').fadeIn(1000);
 }
 
@@ -32,12 +32,8 @@ const Header = () => (
                 <img src={Logo} alt="Logo EverSitemas"/>
             </Link>
 
-            <button className="btn-menu" onClick={ShowMobileMenu}>
-                    <i className="fas fa-align-justify fa-lg" ></i>
-            </button>
-
             <ul id="socials_desktop">
-                
+
                 <a href="https://www.linkedin.com/in/pedromarim/">
                     <li>
                         <i className="fab fa-linkedin fa-2x"></i>
@@ -61,8 +57,12 @@ const Header = () => (
                         <i className="fab fa-facebook-square fa-2x"></i>
                     </li>
                 </a>
-                    
+
             </ul>
+
+            <button className="btn-menu" onClick={ShowMobileMenu}>
+                <i className="fas fa-align-justify fa-lg" ></i>
+            </button>
 
         </header>
 
@@ -119,9 +119,9 @@ const Header = () => (
                 <ol id="lista_socialmedias_mobile"> 
 
                     <li>
-                       <Link to="/contato" onClick={changepage}>
+                        <a href="https://api.whatsapp.com/send?phone=5519997677735&text=Queria uma informação sobre o sistema" target="_blank" rel="noopener noreferrer">
                             <i className="fab fa-whatsapp-square fa-2x"></i>
-                       </Link>
+                        </a>
                     </li>
 
                     <li>

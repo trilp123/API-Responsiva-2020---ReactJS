@@ -36,6 +36,7 @@
     float: right;
     border-bottom: none;
     background-color: transparent;
+    padding: 2% 2%;
 }
 
 @media screen and (max-width: 1000px ){

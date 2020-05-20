@@ -1,35 +1,41 @@
 #wpp a{
-    color: #336e31;
-    opacity: 75%;
+    font-size: 5px;
+    text-align: center;
+    color: white;
     position: fixed;
-    top: 85%;
-    left: 93%;
-    padding: 10px;
-    z-index: 10000000;
+    top: 88%;
+    left: 94.5%;
+    background-color: #338630;
+    z-index: 100;
+    padding: 10px 14px;
+    border-radius: 100%;
 }
 
-@media screen and (max-width:1000px){
+@media screen and (min-width:100px){
     #wpp a {
-        top: 87%;
-        left: 83%;
-        font-size:13px;
+        top: 91%;
+        left: 87%;
+        font-size:8px;
+        padding: 4px 7px;
     };
 }
 
-@media screen and (min-width:1024px){
+@media screen and (min-width:1000px){
     #wpp a {
-        top: 80%;
+        top: 78%;
         left: 93.5%;
-        font-size:13px;
+        font-size:7px;
     };
 }
 
 @media screen and (min-width:1100px){
     #wpp a {
-        top: 89.8%;
-        left: 95.2%;
+        top: 92%;
+        left: 96%;
+        font-size: 9px;
     };
 }
+
 
 
 
